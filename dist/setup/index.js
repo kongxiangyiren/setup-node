@@ -93542,7 +93542,7 @@ class OfficialBuilds extends base_distribution_1.default {
                 info = {};
                 info.resolvedVersion = rel.version;
                 info.arch = rel.files[0].arch;
-                info.downloadUrl = rel.files[0].download_urldownload_url.replace('https://github.com',(process.env['GITHUB_PROXY_URL'] || 'https://github.com'));
+                info.downloadUrl = rel.files[0].download_url.replace('https://github.com',(process.env['GITHUB_PROXY_URL'] || 'https://github.com'));
                 info.fileName = rel.files[0].filename;
             }
             return info;
